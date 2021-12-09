@@ -1,0 +1,24 @@
+{
+  "name": "SIT-Portail",
+  "dockerFile": "Dockerfile",
+
+  "postCreateCommand": "npm install",
+
+  "appPort": [443],
+
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "msjsdiag.debugger-for-chrome",
+    "eamodio.gitlens",
+    "davidanson.vscode-markdownlint",
+    "visualstudioexptteam.vscodeintellicode",
+    "ms-vscode.js-debug",
+    "vscode-icons-team.vscode-icons",
+    "coenraads.bracket-pair-colorizer"
+  ],
+
+  "runArgs": ["-u", "node", "--name", "sit-portail-dev"]
+}
